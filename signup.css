@@ -1,0 +1,107 @@
+body{
+/* background-image: linear-gradient(to right, PURPLE , BLUE); */
+background-color: peru;
+}
+
+h3{
+	font-family: calibri;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+}
+#heading{
+	font-size: 1.4em;
+	font-weight: bold;
+
+}
+#login{
+display: flex;
+margin: auto;
+border-radius: 9px;
+
+}
+input{
+	border: 1px solid grey;
+border-radius: 6px;
+height: 29px;
+	width: 60%;
+}
+#left{
+	color: white;
+	padding-top: 50px;
+	padding-bottom: 0%;
+	font-family: calibri;
+	font-weight: bold;
+	font-size: 3.4em;
+	text-align: center;
+	margin-left: 9%;
+	width: 40%;
+	float: left;
+	widows: 20%;
+	background-image: url("logo.jpg");
+	height: 508px;
+	border-top-left-radius: 11px;
+	border-bottom-left-radius: 11px;
+
+
+
+}
+#right{
+	float: right;
+	margin-right: 9%;
+	font-family: calibri;
+	text-align: center;
+	background-color: grey;
+	box-shadow: 2px black;
+	width: 60%;
+	border-top-right-radius: 11px;
+	border-bottom-right-radius: 11px;
+	color: black;
+	font-size: 1.2rem;
+	height: auto;
+	widows: 20%;
+	
+}
+#submit{
+	width: 22%;
+	height: 7%;
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	font-size: 1.0em;
+	width: 60%;
+	border-radius: 6px;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+@media only screen and (max-width: 600px){
+	h1{
+		font-size: .6em;
+		padding-top: 0px;
+	}
+	#login{
+		margin-top: 0px;
+		height: 430px;
+		font-size: .8em;
+	}
+	input{
+		height: auto;
+		border-radius: 3px;
+	}
+	#left{
+		height: 379px;
+		border-bottom-left-radius: 11px;
+	}
+	#heading{
+		font-size: 1.1em;
+		font-weight: bold;
+		
+	}
+
+
+}
+

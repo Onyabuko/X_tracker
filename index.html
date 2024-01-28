@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>HOME</title>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+   else {
+    x.style.display = "block";
+  }
+}
+
+
+</script>
+
+
+
+</head>
+<body>
+    <div id="hamb" onclick="myFunction()">
+        <div class="hh"></div>
+        <div class="hh"></div>
+        <div class="hh"></div>
+    </div>
+         
+    <div id="dash">Dashboard
+    
+        <a href="login.html"><span class="entry">
+            <img src="user.svg" alt="user" height="25px" width="25px"> &nbsp;
+            Logout</span>
+        </a>
+    
+    </div>
+    <div id="myLinks">
+        <a href="index.html" class="link">Home page</a>
+        <a href="entryexpense.html" class="link">Entry Expense</a>
+        <a href="#" class="link">Entry Income</a>
+        <a href="#" class="link">Expense Management</a>
+        <a href="#" class="link">Income Management</a>
+    </div>
+<div class="main">
+
+
+<br>
+<div id="content"><br>
+    <div>Total balance &nbsp
+
+        <input type="number" name="bal" id="bal">
+    </div> <br>
+    <div>Total Expense &nbsp
+        <input type="number" name="exp" id="bal">
+    </div> <br>
+    <div>Total Income &nbsp &nbsp
+        <input type="number" name="inc" id="bal" class="last">
+    </div>
+
+
+
+
+    
+</div>
+<br>
+
+<div id="disp">
+    <div name="display" id="display" cols="7" rows="210">
+</div>
+</div>
+
+<br><br>
+<div class="add">
+ <a href="entryexpense.html" style="color: white"><button type="button" class="btn2" >Add Expense</button></a>
+&nbsp
+<button type="button" class="btn2"> Add Income</button>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

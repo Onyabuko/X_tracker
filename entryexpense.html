@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Entry Expense </title>
+
+<script>
+    
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwYwFzs2bhuVBZ1u8BamzOHE8ieJWvt_J4ri3qGZ19qvNUZoTb_GLTt67HNxJis_OubOw/exec'
+const form = document.forms['expense-form']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'post', body: new FormData(form)})
+        .then(response => alert("Data successfully stored"))
+        //.then(error =>{window.location.reload();}) 
+        .catch(error => console.error('Error!', error.message))
+});
+
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+   else {
+    x.style.display = "block";
+  }
+}
+
+
+
+
+</script>
+
+<script src="database.js"></script>
+</head>
+<body>
+    <div id="hamb" onclick="myFunction()">
+        <div class="hh"></div>
+        <div class="hh"></div>
+        <div class="hh"></div>
+    </div>
+         
+    <div id="dash">Add Expense
+    
+        <a href="login.html"><span class="entry">
+            <img src="user.svg" alt="user" height="25px" width="25px"> &nbsp;
+            Logout</span>
+        </a>
+    
+    </div>
+    <div id="myLinks">
+        <a href="index.html" class="link">Home page</a>
+        <a href="entryexpense.html" class="link">Entry Expense</a>
+        <a href="#" class="link">Entry Income</a>
+        <a href="#" class="link">Expense Management</a>
+        <a href="#" class="link">Income Management</a>
+    </div>
+<div class="main">
+
+
+<br>
+<div id="content"><br>
+    <form action="" method="post" name="expense-form">
+    <div>
+        Expense category <br>
+        <select name="category" id="category">
+            <option value="1">Water</option>
+            <option value="2">Electricity</option>
+            <option value="3">School fees</option>
+            <option value="4">TV subscription</option>
+            <option value="5">Fuel</option>
+            <option value="6">Food</option>
+        </select>
+    </div> <br>
+    <div>Amount <br>
+        <input type="number" name="amount" id="amount"  placeholder="UGX">
+    </div> <br>
+    <div>Date <br>
+        <input type="date" name="date" id="bal">
+    </div><br>
+
+    <div>Notes<br>
+        <textarea  id="note" name="notes" class="last" placeholder="Type your notes"></textarea>
+    </div>
+
+
+    
+</div>
+
+<br><br>
+<br><br>
+<div class="add">
+    <button type="submit" class="btn2"> Save Expense</button>
+
+&nbsp
+<a href="index.html" style="color: white; "> 
+<button type="button" id="cancelbtn" style="background-color: red; text-align: center;
+width: 180px;height: 39px;color: white;font-size: 1.2rem;border-radius: 5px;margin: auto;
+margin-right: 12%;"> Cancel</button></a>
+
+</div>
+
+</form>
+
+</div>
+
+
+</body>
+</html>
